@@ -5,9 +5,9 @@ import CardImage from "../cardImage/cardImage";
 import CardInfo from "../cardInfo/cardInfo";
 
 
-const Card = ({title,image,info}) => {
+const Card = ({title,image,info,onClick}) => {
   return (
-    <div className="card">
+    <div className="card" onClick={()=>{onClick()}}>
       <div className="card-body">
         <CardTitle title={title} />
         <CardImage url={image} />
